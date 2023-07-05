@@ -4,6 +4,8 @@ set -e
 ATLANTIS_VERSION=v0.24.3
 ATLANTIS_PACKAGE=atlantis_linux_386.zip
 
+sudo apt install unzip -y
+
 echo "Download atlantis lib"
 wget https://github.com/runatlantis/atlantis/releases/download/${ATLANTIS_VERSION}/${ATLANTIS_PACKAGE}
 unzip atlantis_linux_386.zip
